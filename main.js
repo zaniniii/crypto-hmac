@@ -24,7 +24,7 @@ app.post('/', (req, res) => {
             });
         }
 
-        const algorithm = 'sha256'; // SHA-256 é mais seguro que SHA-1
+        const algorithm = 'sha1'; 
         
         // Criar HMAC
         const hmac = crypto.createHmac(algorithm, secret);
